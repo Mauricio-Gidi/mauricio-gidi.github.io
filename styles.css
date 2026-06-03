@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>About | Mauricio Gidi</title>
+  <meta name="description" content="About Mauricio Gidi: Nuke compositor moving into artist-facing tools, pipeline support, and production technology work." />
+  <meta name="author" content="Mauricio Gidi" />
+  <meta name="theme-color" content="#0b0f14" />
+
+  <link rel="canonical" href="https://mauricio-gidi.github.io/about/" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About | Mauricio Gidi" />
+  <meta property="og:description" content="Nuke compositor moving into artist-facing tools, pipeline support, and production technology work." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mauricio-gidi.github.io/about/" />
+  <meta property="og:image" content="https://mauricio-gidi.github.io/assets/img/og/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Mauricio Gidi" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About | Mauricio Gidi" />
+  <meta name="twitter:description" content="Nuke compositor moving into artist-facing tools, pipeline support, and production technology work." />
+  <meta name="twitter:image" content="https://mauricio-gidi.github.io/assets/img/og/og-card.png" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="container site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="/" aria-label="Mauricio Gidi home">
+        <span class="badge">MG</span>
+        <span>
+          <span class="brand-name">Mauricio Gidi</span>
+          <span class="brand-subtitle">Pipeline / ATD · Nuke + Python · Artist Support</span>
+        </span>
+      </a>
+
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/projects/">Projects</a>
+        <a href="/about/" class="active" aria-current="page">About</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero about-hero-grid">
+      <div>
+        <p class="eyebrow">About</p>
+        <h1>Nuke compositor moving into artist-facing tools and pipeline support.</h1>
+        <p class="lede">
+          My background is in Nuke compositing, but my current direction is Pipeline / ATD-oriented:
+          artist support, Nuke/Python tools, workflow troubleshooting, and practical production technology habits.
+        </p>
+        <p>
+          I care about tools and fixes artists can trust. My compositing background helps me understand why a technical issue matters:
+          not as an abstract bug, but as something that can block a shot, break a deadline, or make an artist afraid to change the setup.
+        </p>
+      </div>
+      <aside class="profile-signal photo-signal" aria-label="Professional focus visual">
+        <img src="/assets/img/profile/mauricio-gidi-portrait.webp" alt="Mauricio Gidi portrait" loading="eager" />
+        <div>
+          <p class="eyebrow">Working style</p>
+          <h2>Clear, practical, low-risk support.</h2>
+          <p>Understand the artist goal, diagnose the real issue, make the smallest safe change, and turn repeated friction into better workflow.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section aria-labelledby="support-heading">
+      <p class="eyebrow">Support mindset</p>
+      <h2 id="support-heading">How I support artists</h2>
+      <div class="support-diagram" aria-label="Artist support workflow">
+        <div class="support-node"><strong>Artist goal</strong><span>What needs to work?</span></div>
+        <div class="support-node"><strong>Diagnosis</strong><span>What is actually failing?</span></div>
+        <div class="support-node"><strong>Safe fix</strong><span>What is the smallest reliable change?</span></div>
+        <div class="support-node"><strong>Repeatable workflow</strong><span>What should be clearer next time?</span></div>
+      </div>
+      <div class="grid support-grid">
+        <article class="card support-card">
+          <h3>Listen before changing anything</h3>
+          <p>I first try to understand what the artist is trying to achieve, what changed recently, and what kind of problem they are actually facing.</p>
+        </article>
+
+        <article class="card support-card">
+          <h3>Find the real cause</h3>
+          <p>I look beyond the visible symptom: paths, versions, dependencies, color settings, render setup, environment mismatches, or workflow gaps.</p>
+        </article>
+
+        <article class="card support-card">
+          <h3>Fix safely</h3>
+          <p>I prefer small, reversible changes that preserve the artist’s work instead of broad changes that create new risk.</p>
+        </article>
+
+        <article class="card support-card">
+          <h3>Make it repeatable</h3>
+          <p>When the same issue appears more than once, I try to turn it into clearer documentation, a checklist, a shared setup, or a tool.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="focus-heading">
+      <h2 id="focus-heading">Technical focus</h2>
+      <div class="grid compact-grid">
+        <article class="card compact-card">
+          <h3>Nuke / compositing</h3>
+          <p>Nuke, NukeX, ACES, EXR workflows, roto/paint, tracking, keying, cleanup, element integration, Mocha Pro, and review-driven delivery.</p>
+        </article>
+
+        <article class="card compact-card">
+          <h3>Pipeline / tools</h3>
+          <p>Python, Nuke Python API, PySide2/PySide6, Qt UI development, JSON, GitHub, documentation, tool configuration, and safe defaults.</p>
+        </article>
+
+        <article class="card compact-card">
+          <h3>Support / production</h3>
+          <p>Artist troubleshooting, Maya-to-Nuke handoffs, folder structures, naming, versioning, render setup, file paths, and clear explanations.</p>
+        </article>
+
+        <article class="card compact-card">
+          <h3>Software foundations</h3>
+          <p>Java, object-oriented programming, data structures coursework, command-line basics, testing/documentation habits, and ongoing CS study.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>Harvard Extension School</h3>
+          <p>Computer Science coursework, including Java/OOP and data structures.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Vancouver Film School</h3>
+          <p>Diploma in Compositing with Honours.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Tecnológico de Monterrey</h3>
+          <p>BA in Digital Art, Visual Effects, with honours.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="footer">
+      <div>© <span id="y"></span> Mauricio Gidi</div>
+      <div class="footer-links">
+        <a href="https://github.com/Mauricio-Gidi" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mauricio-gidi-29689b22a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://vimeo.com/user203020207" target="_blank" rel="noopener noreferrer">Vimeo</a>
+        <a href="https://www.imdb.com/name/nm15902324/" target="_blank" rel="noopener noreferrer">IMDb</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
