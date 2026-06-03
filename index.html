@@ -60,7 +60,7 @@
     <section class="hero hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">VFX pipeline support · Nuke tools · compositing</p>
-        <h1>Pipeline / ATD-oriented VFX professional with Nuke compositing experience.</h1>
+        <h1>Pipeline / <span class="keep-together">ATD-oriented</span> VFX professional with Nuke compositing experience.</h1>
         <p class="lede">
           I build practical Nuke/Python tools and support artist workflows from the perspective of someone who has delivered shots,
           worked through notes, and dealt with the small technical problems that slow production down.
@@ -78,27 +78,23 @@
       </div>
 
       <aside class="hero-visual" aria-label="Visual portfolio preview">
-        <div class="visual-card identity-card">
-          <div class="avatar-orb" aria-hidden="true">MG</div>
-          <h2>Nuke + Python, from the artist side.</h2>
-          <p>Compositing context, practical tools, and support-minded troubleshooting.</p>
+        <div class="visual-card identity-card portrait-intro-card">
+          <img class="portrait-thumb" src="/assets/img/profile/mauricio-gidi-portrait.webp" alt="Mauricio Gidi" />
+          <div>
+            <h2>Nuke + Python, from the artist side.</h2>
+            <p>Compositing context, practical tools, and support-minded troubleshooting.</p>
+          </div>
         </div>
 
         <a class="visual-card hero-video-card" href="/projects/#heavy-node-optimizer" aria-label="View Nuke Heavy Node Optimizer project">
           <div class="mock-window-bar"><span class="mock-window-dot" aria-hidden="true"></span><span class="mock-window-title">Heavy Node Optimizer</span></div>
-          <video autoplay muted loop playsinline preload="metadata" poster="/assets/img/projects/heavy-node-optimizer-poster.webp">
-            <source src="/assets/img/projects/heavy-node-optimizer-demo.webm" type="video/webm" />
-            <img src="/assets/img/projects/heavy-node-optimizer-poster.webp" alt="Nuke Heavy Node Optimizer preview" loading="lazy" />
-          </video>
+          <img class="animated-preview" src="/assets/img/projects/heavy-node-optimizer-demo.gif" alt="Nuke Heavy Node Optimizer preview" />
           <span class="preview-label">Nuke tool</span>
         </a>
 
         <a class="visual-card hero-video-card secondary" href="/projects/#nuke-toolsets" aria-label="View Nuke Toolsets project">
           <div class="mock-window-bar"><span class="mock-window-dot" aria-hidden="true"></span><span class="mock-window-title">Nuke Toolsets</span></div>
-          <video autoplay muted loop playsinline preload="metadata" poster="/assets/img/projects/nuke-toolsets-poster.webp">
-            <source src="/assets/img/projects/nuke-toolsets-demo.webm" type="video/webm" />
-            <img src="/assets/img/projects/nuke-toolsets-poster.webp" alt="Nuke Toolsets preview" loading="lazy" />
-          </video>
+          <img class="animated-preview" src="/assets/img/projects/nuke-toolsets-demo.gif" alt="Nuke Toolsets preview" />
           <span class="preview-label">Tool library</span>
         </a>
 
@@ -158,17 +154,9 @@
               <span>Safe toggles</span>
               <span>Qt UI</span>
             </div>
-            <video class="project-video" autoplay muted loop playsinline preload="metadata" poster="/assets/img/projects/heavy-node-optimizer-poster.webp" aria-label="Nuke Heavy Node Optimizer interface demo">
-              <source src="/assets/img/projects/heavy-node-optimizer-demo.webm" type="video/webm" />
-              <img src="/assets/img/projects/heavy-node-optimizer-poster.webp" alt="Nuke Heavy Node Optimizer interface demo" loading="lazy" />
-            </video>
+            <img class="project-video animated-preview" src="/assets/img/projects/heavy-node-optimizer-demo.gif" alt="Nuke Heavy Node Optimizer interface demo" />
             <figcaption>Built from a common compositing problem: keeping scripts responsive without manually hunting for heavy nodes.</figcaption>
           </figure>
-          <div class="media-strip" aria-label="Heavy Node Optimizer screenshots">
-            <img src="/assets/img/projects/frames/heavy-node-2.webp" alt="Heavy Node Optimizer UI frame" loading="lazy" />
-            <img src="/assets/img/projects/frames/heavy-node-8.webp" alt="Heavy Node Optimizer configuration frame" loading="lazy" />
-            <img src="/assets/img/projects/frames/heavy-node-14.webp" alt="Heavy Node Optimizer result frame" loading="lazy" />
-          </div>
 
           <div class="kickers">
             <span class="tag">Nuke</span>
@@ -196,17 +184,9 @@
               <span>Metadata</span>
               <span>Shared libraries</span>
             </div>
-            <video class="project-video" autoplay muted loop playsinline preload="metadata" poster="/assets/img/projects/nuke-toolsets-poster.webp" aria-label="Nuke Toolsets interface demo">
-              <source src="/assets/img/projects/nuke-toolsets-demo.webm" type="video/webm" />
-              <img src="/assets/img/projects/nuke-toolsets-poster.webp" alt="Nuke Toolsets interface demo" loading="lazy" />
-            </video>
+            <img class="project-video animated-preview" src="/assets/img/projects/nuke-toolsets-demo.gif" alt="Nuke Toolsets interface demo" />
             <figcaption>A small shared-library concept for reusable Nuke setups and Python toolsets.</figcaption>
           </figure>
-          <div class="media-strip" aria-label="Nuke Toolsets screenshots">
-            <img src="/assets/img/projects/frames/toolsets-2.webp" alt="Nuke Toolsets browser frame" loading="lazy" />
-            <img src="/assets/img/projects/frames/toolsets-8.webp" alt="Nuke Toolsets metadata frame" loading="lazy" />
-            <img src="/assets/img/projects/frames/toolsets-14.webp" alt="Nuke Toolsets workflow frame" loading="lazy" />
-          </div>
 
           <div class="kickers">
             <span class="tag">Nuke</span>
@@ -266,19 +246,27 @@
           <p>Built public Nuke/Python tools from real artist friction.</p>
           <a class="btn" href="https://vimeo.com/1006713311" target="_blank" rel="noopener noreferrer">View reel</a>
         </div>
-        <div class="visual-proof-strip" aria-label="Visual portfolio links">
-          <a class="proof-tile reel-tile" href="https://vimeo.com/1006713311" target="_blank" rel="noopener noreferrer">
+        <div class="visual-proof-strip work-stills" aria-label="Selected compositing stills">
+          <a class="proof-tile image-tile" href="https://vimeo.com/1006713311" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/work/stills/shot-01-green-screen-matte-painting.webp" alt="Green screen and matte painting compositing still" />
             <strong>Compositing reel</strong>
-            <span>Selected production and student work</span>
+            <span>Green screen · matte painting · atmosphere</span>
           </a>
-          <div class="proof-tile">
-            <strong>Tool demos</strong>
-            <span>Short Nuke workflow loops</span>
-          </div>
-          <div class="proof-tile">
-            <strong>Artist support</strong>
-            <span>Diagnosis → safe fix → repeatable workflow</span>
-          </div>
+          <a class="proof-tile image-tile" href="https://vimeo.com/1006713311" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/work/stills/shot-03b-battlefield-extension.webp" alt="Battlefield extension compositing still" />
+            <strong>Battlefield extension</strong>
+            <span>3D tracking · projection · asset multiplication</span>
+          </a>
+          <a class="proof-tile image-tile" href="https://vimeo.com/1006713311" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/work/stills/shot-05-screen-bottle-logo-replacement.webp" alt="Screen and bottle logo replacement compositing still" />
+            <strong>Screen / logo replacement</strong>
+            <span>Tracking · graphic integration · grain</span>
+          </a>
+          <a class="proof-tile image-tile" href="https://vimeo.com/1006713311" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/work/stills/shot-07-merlin-trial-cg-environment-magic.webp" alt="CG environment and magic integration still" />
+            <strong>CG / magic integration</strong>
+            <span>3D-to-comp · interactive light · final composite</span>
+          </a>
         </div>
       </div>
     </section>
