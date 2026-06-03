@@ -57,24 +57,43 @@
   </header>
 
   <main id="main" class="container">
-    <section class="hero narrow-hero">
-      <p class="eyebrow">Projects</p>
-      <h1>Production-minded Nuke tools and selected VFX work.</h1>
-      <p class="lede">
-        The main focus here is practical Nuke/Python tooling: small workflow improvements designed around artist trust,
-        safe behavior, and repeatable production habits.
-      </p>
-      <p>
-        The VFX work is included as context for how I understand shots, reviews, handoffs, and technical decisions from the artist side.
-      </p>
+    <section class="hero project-hero-grid">
+      <div>
+        <p class="eyebrow">Projects</p>
+        <h1>Production-minded Nuke tools and selected VFX work.</h1>
+        <p class="lede">
+          The main focus here is practical Nuke/Python tooling: small workflow improvements designed around artist trust,
+          safe behavior, and repeatable production habits.
+        </p>
+        <p>
+          The VFX work is included as context for how I understand shots, reviews, handoffs, and technical decisions from the artist side.
+        </p>
 
-      <div class="kickers">
-        <span class="tag">Nuke</span>
-        <span class="tag">Python</span>
-        <span class="tag">PySide / Qt</span>
-        <span class="tag">Artist workflows</span>
-        <span class="tag">Compositing</span>
-        <span class="tag">ACES / EXR</span>
+        <div class="kickers">
+          <span class="tag">Nuke</span>
+          <span class="tag">Python</span>
+          <span class="tag">PySide / Qt</span>
+          <span class="tag">Artist workflows</span>
+          <span class="tag">Compositing</span>
+          <span class="tag">ACES / EXR</span>
+        </div>
+      </div>
+      <div class="hero-media-board" aria-label="Project media preview">
+        <a class="board-card wide" href="#heavy-node-optimizer">
+          <video autoplay muted loop playsinline preload="metadata" poster="/assets/img/projects/heavy-node-optimizer-poster.webp">
+            <source src="/assets/img/projects/heavy-node-optimizer-demo.webm" type="video/webm" />
+            <img src="/assets/img/projects/heavy-node-optimizer-poster.webp" alt="Nuke Heavy Node Optimizer preview" loading="lazy" />
+          </video>
+          <div class="board-caption">Nuke Heavy Node Optimizer</div>
+        </a>
+        <a class="board-card" href="#nuke-toolsets">
+          <img src="/assets/img/projects/frames/toolsets-8.webp" alt="Nuke Toolsets preview frame" loading="lazy" />
+          <div class="board-caption">Toolsets browser</div>
+        </a>
+        <a class="board-card" href="https://vimeo.com/1006713311" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/img/projects/frames/heavy-node-14.webp" alt="Visual work preview frame" loading="lazy" />
+          <div class="board-caption">Reel / visual work</div>
+        </a>
       </div>
     </section>
 
@@ -83,7 +102,7 @@
       <h2 id="technical-projects">Nuke tools</h2>
 
       <div class="grid">
-        <article class="card feature-card" id="heavy-node-optimizer">
+        <article class="card feature-card case-study-card" id="heavy-node-optimizer">
           <h3>Nuke Heavy Node Optimizer</h3>
           <p>
             Artist-facing Nuke Python tool to bulk disable, enable, or toggle user-defined heavy node classes across a script.
@@ -91,12 +110,22 @@
           </p>
 
           <figure class="media">
-            <video class="project-video" autoplay muted loop playsinline preload="metadata" aria-label="Nuke Heavy Node Optimizer interface demo">
+            <div class="media-badges" aria-hidden="true">
+              <span>Nuke Python</span>
+              <span>Disable-knob only</span>
+              <span>Artist-facing</span>
+            </div>
+            <video class="project-video" autoplay muted loop playsinline preload="metadata" poster="/assets/img/projects/heavy-node-optimizer-poster.webp" aria-label="Nuke Heavy Node Optimizer interface demo">
               <source src="/assets/img/projects/heavy-node-optimizer-demo.webm" type="video/webm" />
-              <img src="/assets/img/projects/heavy-node-optimizer-demo.gif" alt="Nuke Heavy Node Optimizer interface demo" loading="lazy" />
+              <img src="/assets/img/projects/heavy-node-optimizer-poster.webp" alt="Nuke Heavy Node Optimizer interface demo" loading="lazy" />
             </video>
             <figcaption>Built from a common comp problem: keeping scripts responsive without manually hunting for heavy nodes.</figcaption>
           </figure>
+          <div class="media-strip" aria-label="Heavy Node Optimizer screenshots">
+            <img src="/assets/img/projects/frames/heavy-node-2.webp" alt="Heavy Node Optimizer UI frame" loading="lazy" />
+            <img src="/assets/img/projects/frames/heavy-node-8.webp" alt="Heavy Node Optimizer configuration frame" loading="lazy" />
+            <img src="/assets/img/projects/frames/heavy-node-14.webp" alt="Heavy Node Optimizer result frame" loading="lazy" />
+          </div>
 
           <div class="project-notes case-grid">
             <div>
@@ -133,7 +162,7 @@
           </div>
         </article>
 
-        <article class="card feature-card" id="nuke-toolsets">
+        <article class="card feature-card case-study-card" id="nuke-toolsets">
           <h3>Nuke Toolsets</h3>
           <p>
             Nuke-integrated Qt browser for reusable disk-based <code>.nk</code> and <code>.py</code> toolsets.
@@ -141,12 +170,22 @@
           </p>
 
           <figure class="media">
-            <video class="project-video" autoplay muted loop playsinline preload="metadata" aria-label="Nuke Toolsets interface demo">
+            <div class="media-badges" aria-hidden="true">
+              <span>Qt browser</span>
+              <span>.nk / .py toolsets</span>
+              <span>Metadata</span>
+            </div>
+            <video class="project-video" autoplay muted loop playsinline preload="metadata" poster="/assets/img/projects/nuke-toolsets-poster.webp" aria-label="Nuke Toolsets interface demo">
               <source src="/assets/img/projects/nuke-toolsets-demo.webm" type="video/webm" />
-              <img src="/assets/img/projects/nuke-toolsets-demo.gif" alt="Nuke Toolsets interface demo" loading="lazy" />
+              <img src="/assets/img/projects/nuke-toolsets-poster.webp" alt="Nuke Toolsets interface demo" loading="lazy" />
             </video>
             <figcaption>A small shared-library concept for reusable Nuke setups and Python toolsets.</figcaption>
           </figure>
+          <div class="media-strip" aria-label="Nuke Toolsets screenshots">
+            <img src="/assets/img/projects/frames/toolsets-2.webp" alt="Nuke Toolsets browser frame" loading="lazy" />
+            <img src="/assets/img/projects/frames/toolsets-8.webp" alt="Nuke Toolsets metadata frame" loading="lazy" />
+            <img src="/assets/img/projects/frames/toolsets-14.webp" alt="Nuke Toolsets workflow frame" loading="lazy" />
+          </div>
 
           <div class="project-notes case-grid">
             <div>
@@ -198,6 +237,21 @@
         I include compositing work here because it explains how I approach tools and support: from the artist side,
         with attention to image quality, review notes, handoffs, and practical constraints.
       </p>
+
+      <div class="visual-proof-strip" aria-label="Selected visual work links">
+        <a class="proof-tile reel-tile" href="https://vimeo.com/1006713311" target="_blank" rel="noopener noreferrer">
+          <strong>Compositing reel</strong>
+          <span>View selected VFX work on Vimeo</span>
+        </a>
+        <div class="proof-tile">
+          <strong>Production context</strong>
+          <span>Nuke, ACES / EXR, reviews, handoffs</span>
+        </div>
+        <div class="proof-tile">
+          <strong>Support context</strong>
+          <span>Tools built from artist friction</span>
+        </div>
+      </div>
 
       <div class="grid compact-grid">
         <article class="card compact-card">
