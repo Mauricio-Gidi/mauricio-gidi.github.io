@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Projects | Mauricio Gidi</title>
-  <meta name="description" content="Selected Nuke tools, software projects, and VFX work by Mauricio Gidi, focused on artist-facing workflows, Nuke/Python tools, and production compositing." />
+  <title>Nuke Tools and VFX Projects | Mauricio Gidi</title>
+  <meta name="description" content="Production-minded Nuke tools and selected VFX work by Mauricio Gidi, focused on artist-facing workflows, safe Nuke/Python tools, and production compositing context." />
   <meta name="author" content="Mauricio Gidi" />
   <meta name="theme-color" content="#0b0f14" />
 
@@ -19,8 +19,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Projects | Mauricio Gidi" />
-  <meta property="og:description" content="Nuke tools, software projects, and selected VFX work focused on artist-facing workflows and production compositing." />
+  <meta property="og:title" content="Nuke Tools and VFX Projects | Mauricio Gidi" />
+  <meta property="og:description" content="Production-minded Nuke tools and selected VFX work focused on artist-facing workflows and production compositing context." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mauricio-gidi.github.io/projects/" />
   <meta property="og:image" content="https://mauricio-gidi.github.io/assets/img/og/og-card.png" />
@@ -30,11 +30,10 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Projects | Mauricio Gidi" />
-  <meta name="twitter:description" content="Nuke tools, software projects, and selected VFX work focused on artist-facing workflows and production compositing." />
+  <meta name="twitter:title" content="Nuke Tools and VFX Projects | Mauricio Gidi" />
+  <meta name="twitter:description" content="Production-minded Nuke tools and selected VFX work focused on artist-facing workflows and production compositing context." />
   <meta name="twitter:image" content="https://mauricio-gidi.github.io/assets/img/og/og-card.png" />
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -44,7 +43,7 @@
         <span class="badge">MG</span>
         <span>
           <span class="brand-name">Mauricio Gidi</span>
-          <span class="brand-subtitle">Nuke + Python Artist Support / Pipeline Tools</span>
+          <span class="brand-subtitle">Pipeline / ATD · Nuke + Python · Artist Support</span>
         </span>
       </a>
 
@@ -60,11 +59,13 @@
   <main id="main" class="container">
     <section class="hero narrow-hero">
       <p class="eyebrow">Projects</p>
-      <h1>Tools, software, and selected VFX work.</h1>
+      <h1>Production-minded Nuke tools and selected VFX work.</h1>
       <p class="lede">
-        My projects are mostly built around the same idea: make artist workflows clearer, safer, and easier to repeat.
-        The Nuke tools are the main focus; the VFX work is included as production context for how I think about artists,
-        shots, and technical decisions.
+        The main focus here is practical Nuke/Python tooling: small workflow improvements designed around artist trust,
+        safe behavior, and repeatable production habits.
+      </p>
+      <p>
+        The VFX work is included as context for how I understand shots, reviews, handoffs, and technical decisions from the artist side.
       </p>
 
       <div class="kickers">
@@ -90,24 +91,33 @@
           </p>
 
           <figure class="media">
-            <img src="/assets/img/projects/heavy-node-optimizer-demo.gif" alt="Gif of the Nuke Heavy Node Optimizer interface" loading="lazy" />
+            <video class="project-video" autoplay muted loop playsinline preload="metadata" aria-label="Nuke Heavy Node Optimizer interface demo">
+              <source src="/assets/img/projects/heavy-node-optimizer-demo.webm" type="video/webm" />
+              <img src="/assets/img/projects/heavy-node-optimizer-demo.gif" alt="Nuke Heavy Node Optimizer interface demo" loading="lazy" />
+            </video>
             <figcaption>Built from a common comp problem: keeping scripts responsive without manually hunting for heavy nodes.</figcaption>
           </figure>
 
-          <div class="project-notes">
+          <div class="project-notes case-grid">
             <div>
-              <strong>Focus</strong>
-              <p>Safe node toggling, artist usability, small workflow automation.</p>
+              <strong>Problem</strong>
+              <p>Artists manually disable heavy nodes to keep scripts responsive, then risk forgetting to re-enable something before final render.</p>
             </div>
             <div>
-              <strong>Technical notes</strong>
-              <p>Python, Nuke API, PySide2/PySide6 compatibility, JSON configuration, logging, import/export, undo grouping.</p>
+              <strong>What I built</strong>
+              <p>A low-risk Nuke Python tool that toggles user-defined heavy node classes while only modifying each node’s <code>disable</code> knob.</p>
             </div>
             <div>
               <strong>Why it matters</strong>
-              <p>Turns a repetitive and error-prone artist habit into a repeatable action with clear boundaries.</p>
+              <p>It turns a repetitive and error-prone artist habit into a predictable action with clear safety boundaries.</p>
+            </div>
+            <div>
+              <strong>Tech</strong>
+              <p>Python, Nuke API, PySide2/PySide6, JSON configuration, logging, import/export, undo grouping.</p>
             </div>
           </div>
+
+          <!-- Future media suggestions: class editor screenshot, selected-node class capture, import/export configuration screenshot, and log/result message screenshot. -->
 
           <div class="kickers">
             <span class="tag">Nuke</span>
@@ -118,8 +128,8 @@
           </div>
 
           <div class="btnrow">
-            <a class="btn primary" href="https://github.com/Mauricio-Gidi/nuke-heavy-node-optimizer">GitHub</a>
-            <a class="btn" href="https://github.com/Mauricio-Gidi/nuke-heavy-node-optimizer/blob/main/docs/case-study-heavy-node-optimizer.md">Case study</a>
+            <a class="btn primary" href="https://github.com/Mauricio-Gidi/nuke-heavy-node-optimizer" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn" href="https://github.com/Mauricio-Gidi/nuke-heavy-node-optimizer/blob/main/docs/case-study-heavy-node-optimizer.md" target="_blank" rel="noopener noreferrer">Case study</a>
           </div>
         </article>
 
@@ -131,24 +141,33 @@
           </p>
 
           <figure class="media">
-            <img src="/assets/img/projects/nuke-toolsets-demo.gif" alt="Gif of the Nuke Toolsets browser interface" loading="lazy" />
+            <video class="project-video" autoplay muted loop playsinline preload="metadata" aria-label="Nuke Toolsets interface demo">
+              <source src="/assets/img/projects/nuke-toolsets-demo.webm" type="video/webm" />
+              <img src="/assets/img/projects/nuke-toolsets-demo.gif" alt="Nuke Toolsets interface demo" loading="lazy" />
+            </video>
             <figcaption>A small shared-library concept for reusable Nuke setups and Python toolsets.</figcaption>
           </figure>
 
-          <div class="project-notes">
+          <div class="project-notes case-grid">
             <div>
-              <strong>Focus</strong>
-              <p>Reusable setups, shared/personal libraries, metadata, filtering, and clean handoffs between artists.</p>
+              <strong>Problem</strong>
+              <p>Artists often search old scripts to copy reusable setups, which is slow, inconsistent, and difficult to keep organized.</p>
             </div>
             <div>
-              <strong>Technical notes</strong>
-              <p>Python, Qt/PySide, MVC-style structure, JSON metadata, validation, overwrite confirmations, clear warnings.</p>
+              <strong>What I built</strong>
+              <p>A Nuke-integrated browser for reusable <code>.nk</code> and <code>.py</code> toolsets stored in shared and personal libraries.</p>
             </div>
             <div>
               <strong>Why it matters</strong>
-              <p>Helps organize useful Nuke setups into a workflow artists can browse and trust.</p>
+              <p>It helps turn useful setups into a browsable workflow that artists can reuse without digging through old scripts.</p>
+            </div>
+            <div>
+              <strong>Tech</strong>
+              <p>Python, Qt/PySide, MVC-style structure, JSON metadata, validation, overwrite confirmations, user-facing warnings.</p>
             </div>
           </div>
+
+          <!-- Future media suggestions: metadata editor screenshot, shared/personal library screenshot, validation warning screenshot, and save/overwrite confirmation screenshot. -->
 
           <div class="kickers">
             <span class="tag">Nuke</span>
@@ -159,51 +178,12 @@
           </div>
 
           <div class="btnrow">
-            <a class="btn primary" href="https://github.com/Mauricio-Gidi/nuke-toolsets">GitHub</a>
-            <a class="btn" href="https://github.com/Mauricio-Gidi/nuke-toolsets/issues">Roadmap / issues</a>
+            <a class="btn primary" href="https://github.com/Mauricio-Gidi/nuke-toolsets" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn" href="https://github.com/Mauricio-Gidi/nuke-toolsets/issues" target="_blank" rel="noopener noreferrer">Roadmap / issues</a>
           </div>
         </article>
       </div>
     </section>
-
-    <!-- <section aria-labelledby="software-projects">
-      <p class="eyebrow">Other software / web projects</p>
-      <h2 id="software-projects">Smaller technical projects</h2>
-
-      <div class="grid compact-grid">
-        <article class="card compact-card">
-          <h3>Sorting Hat Quiz</h3>
-          <p>
-            Java Swing desktop application built for Harvard CSCI 10B, using object-oriented structure, JSON-driven data,
-            and a custom scoring system to calculate house probabilities.
-          </p>
-          <div class="kickers">
-            <span class="tag">Java</span>
-            <span class="tag">Swing</span>
-            <span class="tag">OOP</span>
-            <span class="tag">JSON</span>
-          </div>
-          <div class="btnrow">
-            <a class="btn" href="https://github.com/Mauricio-Gidi/Sorting_Hat_Quiz">GitHub</a>
-          </div>
-        </article>
-
-        <article class="card compact-card">
-          <h3>Portfolio Website</h3>
-          <p>
-            Personal portfolio site used to connect my Nuke tools, compositing work, GitHub projects, and professional links in one place.
-          </p>
-          <div class="kickers">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">GitHub Pages</span>
-          </div>
-          <div class="btnrow">
-            <a class="btn" href="https://github.com/Mauricio-Gidi/mauricio-gidi.github.io">GitHub</a>
-          </div>
-        </article>
-      </div>
-    </section> -->
 
     <section aria-labelledby="vfx-work">
       <div class="section-heading">
@@ -211,7 +191,7 @@
           <p class="eyebrow">Selected VFX / compositing work</p>
           <h2 id="vfx-work">Production context</h2>
         </div>
-        <a class="text-link" href="https://vimeo.com/1006713311">View reel</a>
+        <a class="text-link" href="https://vimeo.com/1006713311" target="_blank" rel="noopener noreferrer">View reel</a>
       </div>
 
       <p class="section-intro">
@@ -222,51 +202,24 @@
       <div class="grid compact-grid">
         <article class="card compact-card">
           <h3>Production Nuke compositing</h3>
-          <p>
-            Delivered production cleanup, roto, object/background replacement, and element integration in Nuke under strict review and QC standards.
-          </p>
-          <div class="kickers">
-            <span class="tag">Nuke</span>
-            <span class="tag">ACES</span>
-            <span class="tag">EXR</span>
-            <span class="tag">QC</span>
-          </div>
+          <p>Delivered cleanup, roto, object/background replacement, element integration, and review-driven work in Nuke.</p>
         </article>
 
         <article class="card compact-card">
-          <h3>High-volume continuity work</h3>
-          <p>
-            Completed a large group of shots requiring consistent eye-glow, cleanup, motion blur, tracking, and look continuity across changing angles and lighting.
-          </p>
-          <div class="kickers">
-            <span class="tag">Continuity</span>
-            <span class="tag">Tracking</span>
-            <span class="tag">Glow integration</span>
-          </div>
+          <h3>Workflow and QC discipline</h3>
+          <p>Worked with ACES/EXR workflows, LUT-based review, continuity, pixel integrity, naming, versioning, and clean handoffs.</p>
         </article>
 
         <article class="card compact-card">
-          <h3>VFX advising + compositing</h3>
-          <p>
-            Helped plan VFX-heavy moments before shooting, then delivered composites involving tracking, parallax, interactive lighting, and LUT-based look consistency.
-          </p>
-          <div class="kickers">
-            <span class="tag">Preproduction</span>
-            <span class="tag">Mocha Pro</span>
-            <span class="tag">LUT workflow</span>
-          </div>
+          <h3>Technical support context</h3>
+          <p>Helped artists and students troubleshoot Nuke scripts, Maya scenes, render issues, file paths, color setup, and reusable workflows.</p>
         </article>
 
         <article class="card compact-card">
-          <h3>CG-to-comp school project</h3>
-          <p>
-            Took a final project from filming and CG asset work through tracking, Arnold rendering, ACES workflow, and final Nuke compositing.
-          </p>
-          <div class="kickers">
-            <span class="tag">Maya</span>
-            <span class="tag">Arnold</span>
-            <span class="tag">Substance</span>
-            <span class="tag">Nuke</span>
+          <h3>Reel</h3>
+          <p>For visual examples of compositing work, use the reel. The tools above are the main technical portfolio focus.</p>
+          <div class="btnrow">
+            <a class="btn" href="https://vimeo.com/1006713311" target="_blank" rel="noopener noreferrer">View reel</a>
           </div>
         </article>
       </div>
@@ -277,10 +230,10 @@
     <div class="footer">
       <div>© <span id="y"></span> Mauricio Gidi</div>
       <div class="footer-links">
-        <a href="https://github.com/Mauricio-Gidi">GitHub</a>
-        <a href="https://www.linkedin.com/in/mauricio-gidi-29689b22a/">LinkedIn</a>
-        <a href="https://vimeo.com/user203020207">Vimeo</a>
-        <a href="https://www.imdb.com/name/nm15902324/">IMDb</a>
+        <a href="https://github.com/Mauricio-Gidi" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mauricio-gidi-29689b22a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://vimeo.com/user203020207" target="_blank" rel="noopener noreferrer">Vimeo</a>
+        <a href="https://www.imdb.com/name/nm15902324/" target="_blank" rel="noopener noreferrer">IMDb</a>
       </div>
     </div>
   </footer>

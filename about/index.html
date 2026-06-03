@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>About | Mauricio Gidi</title>
-  <meta name="description" content="About Mauricio Gidi: VFX compositor focused on Nuke + Python artist support, pipeline tools, and practical production workflows." />
+  <meta name="description" content="About Mauricio Gidi: Nuke compositor moving into artist-facing tools, pipeline support, and production technology work." />
   <meta name="author" content="Mauricio Gidi" />
   <meta name="theme-color" content="#0b0f14" />
 
@@ -20,7 +20,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="About | Mauricio Gidi" />
-  <meta property="og:description" content="VFX compositor focused on Nuke + Python artist support, pipeline tools, and practical production workflows." />
+  <meta property="og:description" content="Nuke compositor moving into artist-facing tools, pipeline support, and production technology work." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mauricio-gidi.github.io/about/" />
   <meta property="og:image" content="https://mauricio-gidi.github.io/assets/img/og/og-card.png" />
@@ -31,10 +31,9 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About | Mauricio Gidi" />
-  <meta name="twitter:description" content="VFX compositor focused on Nuke + Python artist support, pipeline tools, and practical production workflows." />
+  <meta name="twitter:description" content="Nuke compositor moving into artist-facing tools, pipeline support, and production technology work." />
   <meta name="twitter:image" content="https://mauricio-gidi.github.io/assets/img/og/og-card.png" />
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -44,7 +43,7 @@
         <span class="badge">MG</span>
         <span>
           <span class="brand-name">Mauricio Gidi</span>
-          <span class="brand-subtitle">Nuke + Python Artist Support / Pipeline Tools</span>
+          <span class="brand-subtitle">Pipeline / ATD · Nuke + Python · Artist Support</span>
         </span>
       </a>
 
@@ -60,166 +59,59 @@
   <main id="main" class="container">
     <section class="hero narrow-hero">
       <p class="eyebrow">About</p>
-      <h1>I’m a compositor who likes solving the workflow around the shot.</h1>
+      <h1>I’m a Nuke compositor moving into artist-facing tools and pipeline support.</h1>
       <p class="lede">
-        My background is in Nuke compositing, but I keep moving toward the technical side of production:
-        artist support, Nuke/Python tools, workflow troubleshooting, and practical pipeline habits.
+        My background is in Nuke compositing, but my current direction is Pipeline / ATD-oriented:
+        artist support, Nuke/Python tools, workflow troubleshooting, and practical production technology habits.
       </p>
       <p>
-        I’m most interested in the space between artists, tools, and production needs. I like understanding what an artist is trying to do,
-        separating the symptom from the real problem, and finding a fix that is clear, safe, and easy to explain.
+        I care about tools and fixes artists can trust. My compositing background helps me understand why a technical issue matters:
+        not as an abstract bug, but as something that can block a shot, break a deadline, or make an artist afraid to change the setup.
       </p>
     </section>
 
-    <section aria-labelledby="summary-heading">
-      <h2 id="summary-heading">Short summary</h2>
-      <div class="content-card">
-        <p>
-          I have production and freelance compositing experience in Nuke, including cleanup, roto, tracking,
-          element integration, ACES/EXR workflows, and review-driven delivery. Alongside that, I build public Nuke/Python tools
-          focused on safer, more repeatable artist workflows.
-        </p>
-        <p>
-          My current direction is toward Assistant Technical Director, Pipeline Support, Nuke Tools, Production Technology,
-          and related studio technical-support roles where compositing knowledge and practical troubleshooting both matter.
-        </p>
-      </div>
-    </section>
-
-    <section aria-labelledby="support-heading" class="support-section">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Artist support</p>
-          <h2 id="support-heading">How I support artists</h2>
-        </div>
-      </div>
-
-      <p class="section-intro">
-        I approach technical problems from the artist side first: understand the goal, separate symptoms from root causes,
-        inspect the setup, apply the smallest safe fix, and explain what changed so the workflow is easier to repeat.
-      </p>
-
+    <section aria-labelledby="support-heading">
+      <p class="eyebrow">Support mindset</p>
+      <h2 id="support-heading">How I support artists</h2>
       <div class="grid support-grid">
         <article class="card support-card">
-          <h3>Nuke script troubleshooting</h3>
-          <p>
-            I help isolate whether a Nuke problem is coming from the script, a node, a gizmo, a bounding box,
-            heavy processing, or a workflow assumption.
-          </p>
-          <ul class="proof-list">
-            <li>Crashing or unstable <code>.nk</code> files</li>
-            <li>Slow scripts, heavy nodes, and large bounding boxes</li>
-            <li>Broken or outdated gizmos</li>
-            <li>Safe fixes that preserve the artist’s work</li>
-          </ul>
+          <h3>Listen before changing anything</h3>
+          <p>I first try to understand what the artist is trying to achieve, what changed recently, and what kind of problem they are actually facing.</p>
         </article>
 
         <article class="card support-card">
-          <h3>Maya-to-Nuke handoffs</h3>
-          <p>
-            I look for the workflow gaps that create downstream confusion between lighting/rendering and compositing.
-          </p>
-          <ul class="proof-list">
-            <li>Required AOVs and frame ranges</li>
-            <li>ACES / color-management consistency</li>
-            <li>Naming, versioning, and render locations</li>
-            <li>Project-relative paths for assets and textures</li>
-          </ul>
+          <h3>Find the real cause</h3>
+          <p>I look beyond the visible symptom: paths, versions, dependencies, color settings, render setup, environment mismatches, or workflow gaps.</p>
         </article>
 
         <article class="card support-card">
-          <h3>Render / environment issues</h3>
-          <p>
-            I try to determine whether the real problem is the scene, the render settings, missing resources,
-            or a mismatch between local and farm environments.
-          </p>
-          <ul class="proof-list">
-            <li>Arnold render-cost diagnosis and optimization</li>
-            <li>Redshift render farm path/version mismatches</li>
-            <li>Texture, cache, and project-structure issues</li>
-            <li>Lower-cost fixes that preserve the intended look</li>
-          </ul>
+          <h3>Fix safely</h3>
+          <p>I prefer small, reversible changes that preserve the artist’s work instead of broad changes that create new risk.</p>
         </article>
 
         <article class="card support-card">
-          <h3>Workflow systems</h3>
-          <p>
-            When a problem repeats, I try to turn it into a clearer process, checklist, shared setup, or artist-facing tool.
-          </p>
-          <ul class="proof-list">
-            <li>Folder structures, naming, and versioning rules</li>
-            <li>Shared and personal Nuke tool libraries</li>
-            <li>Safe Nuke tools with confirmations and clear boundaries</li>
-            <li>Documentation for recurring artist problems</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="content-card support-process" aria-labelledby="process-heading">
-        <h3 id="process-heading">My usual support process</h3>
-        <ol class="process-list">
-          <li>Understand what the artist is trying to achieve.</li>
-          <li>Separate the visible symptom from the likely root cause.</li>
-          <li>Check versions, paths, settings, dependencies, and recent changes.</li>
-          <li>Apply the smallest safe fix instead of changing the whole setup.</li>
-          <li>Explain what changed and document recurring issues when useful.</li>
-        </ol>
-      </div>
-    </section>
-
-    <section aria-labelledby="highlights-heading">
-      <h2 id="highlights-heading">Experience highlights</h2>
-      <div class="grid compact-grid">
-        <article class="card compact-card">
-          <h3>Production compositing</h3>
-          <p>
-            Delivered Nuke compositing work for professional and freelance projects, with attention to invisible fixes,
-            pixel integrity, continuity, and review notes.
-          </p>
-        </article>
-
-        <article class="card compact-card">
-          <h3>Artist support</h3>
-          <p>
-            Supported VFX students and collaborators with Nuke scripts, Maya scenes, render issues, paths, assets,
-            color-management problems, and handoff workflows.
-          </p>
-        </article>
-
-        <article class="card compact-card">
-          <h3>Nuke tools</h3>
-          <p>
-            Built Nuke Heavy Node Optimizer and Nuke Toolsets to solve small but real artist workflow problems around speed,
-            reuse, safety, and clarity.
-          </p>
-        </article>
-
-        <article class="card compact-card">
-          <h3>Workflow thinking</h3>
-          <p>
-            I tend to look for the repeatable pattern behind a problem: naming, versioning, folder structure,
-            render locations, project-relative paths, documentation, and clean handoffs.
-          </p>
+          <h3>Make it repeatable</h3>
+          <p>When the same issue appears more than once, I try to turn it into clearer documentation, a checklist, a shared setup, or a tool.</p>
         </article>
       </div>
     </section>
 
-    <section aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Technical focus</h2>
+    <section aria-labelledby="focus-heading">
+      <h2 id="focus-heading">Technical focus</h2>
       <div class="grid compact-grid">
         <article class="card compact-card">
           <h3>Nuke / compositing</h3>
-          <p>Nuke, NukeX, ACES, EXR workflows, roto/paint, tracking, keying, cleanup, element integration, Mocha Pro, LUT-based review workflows.</p>
+          <p>Nuke, NukeX, ACES, EXR workflows, roto/paint, tracking, keying, cleanup, element integration, Mocha Pro, and review-driven delivery.</p>
         </article>
 
         <article class="card compact-card">
           <h3>Pipeline / tools</h3>
-          <p>Python, Nuke Python API, PySide2/PySide6, Qt UI development, JSON, GitHub, documentation, tool configuration, safe defaults.</p>
+          <p>Python, Nuke Python API, PySide2/PySide6, Qt UI development, JSON, GitHub, documentation, tool configuration, and safe defaults.</p>
         </article>
 
         <article class="card compact-card">
           <h3>Support / production</h3>
-          <p>Artist troubleshooting, Maya-to-Nuke handoffs, folder structures, naming, versioning, render setup, file paths, clear explanations.</p>
+          <p>Artist troubleshooting, Maya-to-Nuke handoffs, folder structures, naming, versioning, render setup, file paths, and clear explanations.</p>
         </article>
 
         <article class="card compact-card">
@@ -252,10 +144,10 @@
     <div class="footer">
       <div>© <span id="y"></span> Mauricio Gidi</div>
       <div class="footer-links">
-        <a href="https://github.com/Mauricio-Gidi">GitHub</a>
-        <a href="https://www.linkedin.com/in/mauricio-gidi-29689b22a/">LinkedIn</a>
-        <a href="https://vimeo.com/user203020207">Vimeo</a>
-        <a href="https://www.imdb.com/name/nm15902324/">IMDb</a>
+        <a href="https://github.com/Mauricio-Gidi" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mauricio-gidi-29689b22a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://vimeo.com/user203020207" target="_blank" rel="noopener noreferrer">Vimeo</a>
+        <a href="https://www.imdb.com/name/nm15902324/" target="_blank" rel="noopener noreferrer">IMDb</a>
       </div>
     </div>
   </footer>
